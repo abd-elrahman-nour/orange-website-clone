@@ -1,0 +1,380 @@
+.main-banner {
+    padding-top: 40px;
+    margin-bottom: 3rem;
+}
+
+.slide img, .aside-banner img {
+    width: 100%;
+}
+
+.slide, .aside-banner a {
+    padding: 10px;
+}
+
+.secondary-slider {
+    margin-bottom: 3rem;
+}
+
+.secondary-slider a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    transition: color 0.3s ease;
+}
+
+.secondary-slider a:hover {
+    color: #f16c00;
+}
+
+.secondary-slider-image {
+    margin-bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+}
+
+.slider-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+}
+
+.secondary-slider-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 50%;
+}
+
+.prev-slide, .next-slide {
+    border: none;
+    background-color: unset;
+    filter: drop-shadow(0px 0px 3px #fff);
+}
+
+.slider-controls > button {
+    margin: 0px 15px;
+}
+
+.orange-section {
+    margin-bottom: 3rem;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-header a {
+    overflow-y: hidden;
+    position: relative;
+    padding: 0.8rem;
+    color: #f16c00;
+    text-decoration: none;
+    font-weight: bold;
+    border: #f16c00 1px solid;
+    transition: color 0.3s ease;
+}
+
+.section-header a::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #f16c00;
+    top: 100%;
+    left: 0px;
+    z-index: -1;
+    transition: top 0.3s ease;
+}
+
+.section-header a:hover {
+    color: white;
+}
+
+.section-header a:hover::before {
+    top: 0%;
+}
+
+.orange-section-card, .orange-section-card-v2 {
+    font-weight: bold;
+}
+
+.orange-section-card-v2 {
+    padding: 1rem;
+}
+
+.orange-section-card * {
+    padding: 0.5rem;
+}
+
+.section-header-v2 {
+    padding: 1rem;
+}
+
+.orange-section-card-v2 div * {
+    padding: 1rem;
+}
+
+.orange-section-card-v2 > div {
+    border: 1px solid lightgray;
+}
+
+.orange-section-content a h3 {
+    transition: color 0.3s ease;
+}
+
+.orange-section-content a:hover h3 {
+    color: #f16c00;
+}
+
+.section-image {
+    padding: 0px !important;
+    width: 100%;
+    height: auto;
+}
+
+.services-section {
+    padding: 2rem;
+    background-color: whitesmoke;
+}
+
+.services-section h2 {
+    margin-bottom: 1rem;
+}
+
+.services-section .margin-container > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+}
+
+.service-section-link * {
+    margin-bottom: 1rem;
+}
+
+.service-section-link {
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.service-section-link:hover {
+    color: #f16c00;
+}
+
+.service-section-link img {
+    display: block;
+    min-width: 34px;
+    min-height: 34px;
+    width: 3rem;
+    height: 3rem;
+}
+
+/* .chat-widget {
+} */
+
+.chat-widget > button {
+    position: fixed;
+    top: 45%;
+    right: 0px;
+    padding: 0.5rem;
+    color: white;
+    border: none;
+    overflow: hidden;
+    background-color: #f16c00af;
+    writing-mode: sideways-lr;
+}
+
+.transition-effect {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #f16e00;
+    z-index: -1;
+    transition: left 0.3s ease;
+}
+
+.chat-widget > button:hover .transition-effect {
+    left: 0%;
+}
+
+.chat-widget-card {
+    position: fixed;
+    bottom: -20rem;
+    right: 3rem;
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background-color: whitesmoke;
+    box-shadow: 0rem 0.5rem 0.8rem rgba(66, 66, 66, 0.233);
+    transition: bottom 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.chat-widget-card-visible {
+    opacity: 1;
+    bottom: 1rem;
+    visibility: visible;
+}
+
+.chat-widget-card-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    border-bottom: 1px solid lightgray;
+    padding: 0.5rem;
+}
+
+.chat-widget-card-controls button {
+    min-width: 24px;
+    min-height: 24px;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 50%;
+    background-color: inherit;
+    transition: background-color 0.3s ease;
+}
+
+.chat-widget-card-controls button:first-of-type img {
+    width: 100%;
+    height: 100%;
+}
+
+.chat-widget-card-controls button:last-of-type span {
+    width: 80%;
+    height: 0.3rem;
+    margin: 0px auto;
+    display: block;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.chat-widget-card-controls button:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.chat-window {
+    padding: 1rem;
+    overflow-y: auto;
+    position: relative;
+    height: calc(100% - 3.5rem);
+}
+
+.chat-window form {
+    font-size: 0.7rem;
+}
+
+.chat-window form > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0px;
+}
+
+.chat-window form > div button[value="submit"] {
+    background-color: #f16e00;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.chat-window form > div button[value="submit"]:hover {
+    background-color: #dc6300;
+}
+
+.chat-window form > div button[value="cencel"] {
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.chat-window form > div button[value="cencel"]:hover {
+    background-color: rgb(112, 112, 112);
+}
+
+.chat-window form > div input, .chat-window form > div select {
+    flex-grow: 1;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    background-color: inherit;
+    border: 1px solid lightgray;
+}
+
+.chat-window form > div input {
+    border: 2px solid lightgray;
+}
+
+.chat-window-footer {
+    font-size: 0.6rem;
+}
+
+.chat-window-footer svg {
+    min-width: 34px;
+    min-height: 16px;
+    width: 3rem;
+    height: 1rem;
+}
+
+.confirm-closing-chat {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.confirm-closing-chat button {
+    margin: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: #f16e00;
+    padding: 0.5rem 1rem;
+    background-color: inherit;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-closing-chat button:hover {
+    background-color: rgb(217, 217, 217);
+}
+
+@media (max-width: 575px) { /* Extra small devices */
+    .chat-widget-card {
+        right: 5%;
+        width: 90%;
+    }
+
+    .services-section .margin-container > div {
+        row-gap: 3rem;
+        column-gap: 0rem;
+    }
+}
